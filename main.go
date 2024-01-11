@@ -4,5 +4,6 @@ import accounts "GoLang/banking"
 
 func main() {
 	account := accounts.NewAccount("daeuna")
-	println(account)
+	account.Deposit(10)
+	println(account.Balance())
 }
